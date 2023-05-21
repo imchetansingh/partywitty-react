@@ -1,0 +1,6853 @@
+{
+	"info": {
+		"_postman_id": "c8f8b2be-fb21-469c-b8b0-2dac311e892e",
+		"name": "new party witty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "dd@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "fcm",
+									"value": "fdfdso98jh8fds",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/login",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "anujsharma.vedansh@gmail.com",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "default"
+										},
+										{
+											"key": "fcm",
+											"value": "fdfdso98jh8fds",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/login",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 03 Apr 2023 11:29:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"login Successfully\",\n    \"data\": {\n        \"id\": 988,\n        \"profile_id\": 349,\n        \"username\": \"Anuj Sharma\",\n        \"contact_no\": null,\n        \"watsapp_no\": null,\n        \"email\": \"anujsharma.vedansh@gmail.com\",\n        \"password\": \"$2a$12$5FW.HJfeCbRdTAWzAyR7SuEwEJ0XLof3V9GRUfOTVaGfc17J0OvuG\",\n        \"gender\": null,\n        \"role\": \"Artist\",\n        \"fcm\": null,\n        \"last_login\": \"2023-03-29 05:27:14\",\n        \"referral_code\": \"xZ4BgYGVDE7jYx26\",\n        \"otp\": 9158,\n        \"status\": \"0\",\n        \"latitude\": null,\n        \"logitude\": null,\n        \"end_page\": \"photographs\",\n        \"temp\": 0,\n        \"auth_type\": \"google\",\n        \"created_at\": \"2023-03-29T11:57:14.000000Z\",\n        \"updated_at\": \"2023-04-03T11:27:20.000000Z\",\n        \"artists_type_id\": 4\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "singup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "test2",
+									"type": "default"
+								},
+								{
+									"key": "contact_no",
+									"value": "8770466438",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "test444@gmail.com3",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"description": "'male', 'female'",
+									"type": "default"
+								},
+								{
+									"key": "fcm",
+									"value": "tsikhgiuiuiugigggyfytdyd58os432fdvfd",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/singup",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"singup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify_otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "420",
+									"type": "default"
+								},
+								{
+									"key": "otp",
+									"value": "1234",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/verify_otp",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"verify_otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserProfileUpdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "476",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "test2",
+									"type": "default"
+								},
+								{
+									"key": "contact_no",
+									"value": "9876543211",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"description": "'male', 'female'",
+									"type": "default"
+								},
+								{
+									"key": "fcm",
+									"value": "34324ffrfds",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/UserProfileUpdate",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"UserProfileUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set_role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "role",
+									"value": "Club",
+									"description": "'Artist', 'Club'",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/set_role",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"set_role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "akashvedanshtechnovision@gmail.com",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/ForgotPassword",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"ForgotPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PasswordUpdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "451",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "1234567890",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/PasswordUpdate",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"PasswordUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list_of_artist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "603",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/list_of_artist",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"list_of_artist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list_of_artist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "603",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/list_of_artist",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"list_of_artist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 22 Feb 2023 07:27:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"Artist List\",\n    \"data\": {\n        \"request_by_status\": \"1\",\n        \"artists\": [\n            {\n                \"id\": 1,\n                \"user_id\": 0,\n                \"username\": \"Malvika khanna\",\n                \"contact_no\": \"8299619469\",\n                \"watsapp_no\": null,\n                \"email\": \"malvikasrivastava3@gmail.com\",\n                \"password\": \"$2y$10$4kaQ2UrumHY3PKja0wTW.uu.r0ULTxnx6uozA4mVfNOzx2iC7c2.e\",\n                \"gender\": \"female\",\n                \"role\": \"Artist\",\n                \"fcm\": \"eURT5sbSR7Si2mPqXMfiZZ:APA91bFxiC5eAtIZZuwki5yKgz7LGqp0FPrpqCpCigUJ-AciPJ57QnZ35jkvGTwz0VwAQg-JZ8EicFC3_sVQeLXamkMjnKSp6_OqYyk84rARQwZElUXyPfu4JPtUJBEVn8HvlcczG-NN\",\n                \"last_login\": \"2022-12-05 06:54:38\",\n                \"referral_code\": \"IN8gPmTptwnB2610\",\n                \"otp\": 1234,\n                \"status\": \"1\",\n                \"latitude\": null,\n                \"logitude\": null,\n                \"end_page\": \"photograph\",\n                \"temp\": 0,\n                \"auth_type\": null,\n                \"created_at\": \"2023-01-31T06:17:46.000000Z\",\n                \"updated_at\": \"2023-02-22T07:24:42.000000Z\",\n                \"type_of_artist_name\": \"music\",\n                \"profile\": \"public/uploads/1675258806.jpg\",\n                \"color\": \"green\",\n                \"request_to\": 1,\n                \"refer_status\": \"0\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "send_request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_by",
+									"value": "385",
+									"type": "default"
+								},
+								{
+									"key": "request_to",
+									"value": "476",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/send_request",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"send_request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "referral_code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "referral_code",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/referral_code",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"referral_code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accept_reject_request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_by",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "request_to",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "fcm",
+									"value": "fe",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/accept_reject_request",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"accept_reject_request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AuthUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "testew@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "default"
+								},
+								{
+									"key": "auth_type",
+									"value": "google",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/AuthUser",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AuthUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Artist",
+			"item": [
+				{
+					"name": "type_of_artist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "37",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/type_of_artist",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"type_of_artist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "type_of_artist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "37",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/type_of_artist",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"type_of_artist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:50:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "10"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Type Of Artist\",\n    \"data\": {\n        \"artist\": [\n            {\n                \"id\": 1,\n                \"name\": \"Vocalist\",\n                \"image\": null,\n                \"status\": \"1\",\n                \"created_at\": \"2022-11-24T10:58:46.000000Z\",\n                \"updated_at\": \"2022-11-24T10:58:46.000000Z\",\n                \"subcategory\": \"1\"\n            }\n        ],\n        \"selected\": {\n            \"artists_type_id\": 1,\n            \"artist_name\": \"Vocalist\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "TypeOfArtistSearch",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search",
+									"value": "voca",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/TypeOfArtistSearch",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"TypeOfArtistSearch"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TypeOfArtistSearch",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search",
+											"value": "voca",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/TypeOfArtistSearch",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"TypeOfArtistSearch"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:51:04 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"search Artist List\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Vocalist\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:58:46.000000Z\",\n            \"updated_at\": \"2022-11-24T10:58:46.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "TypeOfArtistSubmit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type_of_artist_id",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "type_of_artist_name",
+									"value": "music",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "988",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/TypeOfArtistSubmit",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"TypeOfArtistSubmit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "TypeOfArtistSubmit",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type_of_artist_id",
+											"value": "4",
+											"type": "default"
+										},
+										{
+											"key": "type_of_artist_name",
+											"value": "music",
+											"type": "default"
+										},
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/TypeOfArtistSubmit",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"TypeOfArtistSubmit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:51:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Type Of Artist update successfully\",\n    \"data\": {\n        \"type_of_artist_id\": \"4\"\n    }\n}"
+						},
+						{
+							"name": "TypeOfArtistSubmit",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type_of_artist_id",
+											"value": "4",
+											"type": "default"
+										},
+										{
+											"key": "type_of_artist_name",
+											"value": "music",
+											"type": "default"
+										},
+										{
+											"key": "user_id",
+											"value": "988",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/TypeOfArtistSubmit",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"TypeOfArtistSubmit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 03 Apr 2023 11:27:20 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Type Of Artist update successfully\",\n    \"data\": {\n        \"profile_id\": 349,\n        \"type_of_artist_id\": \"4\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "type_of_artist_subcategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type_of_artist_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "286",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "302",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/type_of_artist_subcategory",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"type_of_artist_subcategory"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "type_of_artist_subcategory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "type_of_artist_id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "user_id",
+											"value": "286",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/type_of_artist_subcategory",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"type_of_artist_subcategory"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:52:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Type Of Artist Subcategory\",\n    \"data\": {\n        \"subcategory\": [\n            {\n                \"id\": 15,\n                \"artists_type_id\": 1,\n                \"name\": \"solo\",\n                \"num_of_intrument\": \"1\",\n                \"image\": null,\n                \"status\": \"1\",\n                \"created_at\": \"2022-12-06T11:43:29.000000Z\",\n                \"updated_at\": \"2022-12-06T11:43:29.000000Z\"\n            },\n            {\n                \"id\": 16,\n                \"artists_type_id\": 1,\n                \"name\": \"duo\",\n                \"num_of_intrument\": \"2\",\n                \"image\": null,\n                \"status\": \"1\",\n                \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n                \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n            },\n            {\n                \"id\": 17,\n                \"artists_type_id\": 1,\n                \"name\": \"Trio\",\n                \"num_of_intrument\": \"3\",\n                \"image\": null,\n                \"status\": \"1\",\n                \"created_at\": \"2022-12-06T11:50:14.000000Z\",\n                \"updated_at\": \"2022-12-06T11:50:14.000000Z\"\n            },\n            {\n                \"id\": 18,\n                \"artists_type_id\": 1,\n                \"name\": \"Karaoke Singer\",\n                \"num_of_intrument\": \"0\",\n                \"image\": null,\n                \"status\": \"0\",\n                \"created_at\": \"2023-02-28T08:33:59.000000Z\",\n                \"updated_at\": \"2023-02-28T08:33:59.000000Z\"\n            },\n            {\n                \"id\": 19,\n                \"artists_type_id\": 1,\n                \"name\": \"Vocalist Only\",\n                \"num_of_intrument\": \"0\",\n                \"image\": null,\n                \"status\": \"0\",\n                \"created_at\": \"2023-02-28T08:33:59.000000Z\",\n                \"updated_at\": \"2023-02-28T08:33:59.000000Z\"\n            }\n        ],\n        \"selected\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "searchSubcategoryArtist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "type_of_artist_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/searchSubcategoryArtist",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"searchSubcategoryArtist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "searchSubcategoryArtist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search",
+											"value": "",
+											"type": "default"
+										},
+										{
+											"key": "type_of_artist_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/searchSubcategoryArtist",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"searchSubcategoryArtist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:52:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"search Sub Category Artist List\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"artists_type_id\": 2,\n            \"name\": \"Percussion\",\n            \"num_of_intrument\": null,\n            \"image\": \"\",\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"artists_type_id\": 2,\n            \"name\": \"Darbuka\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"artists_type_id\": 2,\n            \"name\": \"Bass Guitarist\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"artists_type_id\": 2,\n            \"name\": \"Drummer\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"artists_type_id\": 2,\n            \"name\": \"Violinist\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"artists_type_id\": 2,\n            \"name\": \"Keyboardist\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"artists_type_id\": 2,\n            \"name\": \"Cajon\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"artists_type_id\": 2,\n            \"name\": \"Tabla\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"artists_type_id\": 2,\n            \"name\": \"Harmonium\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"artists_type_id\": 2,\n            \"name\": \"Flute\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"artists_type_id\": 2,\n            \"name\": \"sexophone\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"artists_type_id\": 2,\n            \"name\": \"Sitarist\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"artists_type_id\": 2,\n            \"name\": \"Acoustic Guitarist\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"artists_type_id\": 2,\n            \"name\": \"Lead Guitarist\",\n            \"num_of_intrument\": null,\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T10:57:30.000000Z\",\n            \"updated_at\": \"2022-11-24T10:57:30.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"artists_type_id\": 1,\n            \"name\": \"solo\",\n            \"num_of_intrument\": \"1\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-12-06T11:43:29.000000Z\",\n            \"updated_at\": \"2022-12-06T11:43:29.000000Z\"\n        },\n        {\n            \"id\": 16,\n            \"artists_type_id\": 1,\n            \"name\": \"duo\",\n            \"num_of_intrument\": \"2\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n            \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n        },\n        {\n            \"id\": 17,\n            \"artists_type_id\": 1,\n            \"name\": \"Trio\",\n            \"num_of_intrument\": \"3\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-12-06T11:50:14.000000Z\",\n            \"updated_at\": \"2022-12-06T11:50:14.000000Z\"\n        },\n        {\n            \"id\": 18,\n            \"artists_type_id\": 1,\n            \"name\": \"Karaoke Singer\",\n            \"num_of_intrument\": \"0\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2023-02-28T08:33:59.000000Z\",\n            \"updated_at\": \"2023-02-28T08:33:59.000000Z\"\n        },\n        {\n            \"id\": 19,\n            \"artists_type_id\": 1,\n            \"name\": \"Vocalist Only\",\n            \"num_of_intrument\": \"0\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2023-02-28T08:33:59.000000Z\",\n            \"updated_at\": \"2023-02-28T08:33:59.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "submitSubCategoryArtist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "988",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "15,16",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_name",
+									"value": "solo,duo",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "302",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/submitSubCategoryArtist",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"submitSubCategoryArtist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "submitSubCategoryArtist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "32",
+											"type": "default"
+										},
+										{
+											"key": "sub_category_id",
+											"value": "15,16",
+											"type": "default"
+										},
+										{
+											"key": "sub_category_name",
+											"value": "solo,duo",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/submitSubCategoryArtist",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"submitSubCategoryArtist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:53:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Sub Category Artist Submit Successfully.\",\n    \"data\": {\n        \"status\": \"1\",\n        \"id\": 15,\n        \"artists_type_id\": 1,\n        \"name\": \"solo\",\n        \"num_of_intrument\": \"1\",\n        \"image\": null,\n        \"created_at\": \"2022-12-06T11:43:29.000000Z\",\n        \"updated_at\": \"2022-12-06T11:43:29.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "AddSubCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "988",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "15,16",
+									"type": "default"
+								},
+								{
+									"key": "sub_category_name",
+									"value": "solo,duo",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "349",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/AddSubCategory",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AddSubCategory"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "submitSubCategoryArtist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "32",
+											"type": "default"
+										},
+										{
+											"key": "sub_category_id",
+											"value": "15,16",
+											"type": "default"
+										},
+										{
+											"key": "sub_category_name",
+											"value": "solo,duo",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/submitSubCategoryArtist",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"submitSubCategoryArtist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:53:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Sub Category Artist Submit Successfully.\",\n    \"data\": {\n        \"status\": \"1\",\n        \"id\": 15,\n        \"artists_type_id\": 1,\n        \"name\": \"solo\",\n        \"num_of_intrument\": \"1\",\n        \"image\": null,\n        \"created_at\": \"2022-12-06T11:43:29.000000Z\",\n        \"updated_at\": \"2022-12-06T11:43:29.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetGenres",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "37",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "23",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetGenres",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetGenres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchGenres",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search",
+									"value": "t",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SearchGenres",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SearchGenres"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SearchGenres",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "search",
+											"value": "t",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/SearchGenres",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"SearchGenres"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:56:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"search Venues\",\n    \"data\": [\n        {\n            \"id\": 2,\n            \"artist_id\": null,\n            \"name\": \"sufi sitting kawwali\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T11:02:08.000000Z\",\n            \"updated_at\": \"2022-11-24T11:02:08.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"artist_id\": null,\n            \"name\": \"Western\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T11:02:08.000000Z\",\n            \"updated_at\": \"2022-11-24T11:02:08.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"artist_id\": null,\n            \"name\": \"Retro pop\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T11:02:08.000000Z\",\n            \"updated_at\": \"2022-11-24T11:02:08.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"artist_id\": null,\n            \"name\": \"Rhythm & Blues\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T11:02:08.000000Z\",\n            \"updated_at\": \"2022-11-24T11:02:08.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"artist_id\": null,\n            \"name\": \"Heavy Metal\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T11:02:08.000000Z\",\n            \"updated_at\": \"2022-11-24T11:02:08.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"artist_id\": null,\n            \"name\": \"Latin\",\n            \"image\": null,\n            \"status\": \"1\",\n            \"created_at\": \"2022-11-24T11:02:08.000000Z\",\n            \"updated_at\": \"2022-11-24T11:02:08.000000Z\"\n        },\n        {\n            \"id\": 17,\n            \"artist_id\": 5,\n            \"name\": \"test\",\n            \"image\": null,\n            \"status\": \"0\",\n            \"created_at\": \"2022-12-17T10:40:11.000000Z\",\n            \"updated_at\": \"2022-12-17T10:40:11.000000Z\"\n        },\n        {\n            \"id\": 18,\n            \"artist_id\": 5,\n            \"name\": \"test2\",\n            \"image\": null,\n            \"status\": \"0\",\n            \"created_at\": \"2022-12-17T10:40:56.000000Z\",\n            \"updated_at\": \"2022-12-17T10:40:56.000000Z\"\n        },\n        {\n            \"id\": 19,\n            \"artist_id\": 5,\n            \"name\": \"test3\",\n            \"image\": null,\n            \"status\": \"0\",\n            \"created_at\": \"2022-12-17T10:41:02.000000Z\",\n            \"updated_at\": \"2022-12-17T10:41:02.000000Z\"\n        },\n        {\n            \"id\": 23,\n            \"artist_id\": 607,\n            \"name\": \"Retro Bollywood\",\n            \"image\": null,\n            \"status\": \"0\",\n            \"created_at\": \"2023-02-03T10:20:50.000000Z\",\n            \"updated_at\": \"2023-02-03T10:20:50.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "SubmitGenres",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "37",
+									"type": "default"
+								},
+								{
+									"key": "selected_genres",
+									"value": "1,2,3",
+									"type": "default"
+								},
+								{
+									"key": "selected_genres_name",
+									"value": "test,tetes,testte",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "23",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitGenres",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitGenres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitVenue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "selected_venue",
+									"value": "1,2,4",
+									"type": "default"
+								},
+								{
+									"key": "selected_venue_name",
+									"value": "test, test1, test4",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitVenue",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitVenue"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SubmitVenue",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "selected_venue",
+											"value": "1,2,3",
+											"type": "default"
+										},
+										{
+											"key": "selected_venue_name",
+											"value": "test, test1, test3",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/SubmitVenue",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"SubmitVenue"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:55:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Perform Submited Successfully.\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "SearchVenue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "search",
+									"value": "b",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SearchVenue",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SearchVenue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVenue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetVenue",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetVenue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitIntro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "introduction",
+									"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitIntro",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitIntro"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SubmitIntro",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "introduction",
+											"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/SubmitIntro",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"SubmitIntro"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:55:35 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Introduction Submited Successfully.\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "GetMediaList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetMediaList",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetMediaList"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetMediaList",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/GetMediaList",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"GetMediaList"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:56:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Media Get Successfully.\",\n    \"data\": [\n        {\n            \"id\": 1282,\n            \"user_id\": 1,\n            \"file_path\": \"public/uploads/1677505920.\",\n            \"location\": null,\n            \"caption\": null,\n            \"with_photo\": null,\n            \"type\": \"1\",\n            \"is_delete\": \"0\",\n            \"created_at\": \"2023-02-27T13:52:00.000000Z\",\n            \"updated_at\": \"2023-02-27T13:52:00.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "media_upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "single_file",
+									"type": "file",
+									"src": "/C:/Users/hp/Downloads/1920-948 11111.png"
+								},
+								{
+									"key": "multiple_file[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/hp/Downloads/game.png",
+										"/C:/Users/hp/Downloads/How to play.png",
+										"/C:/Users/hp/Downloads/Manage Market.png"
+									],
+									"disabled": true
+								},
+								{
+									"key": "with_photo",
+									"value": "celeb",
+									"type": "default"
+								},
+								{
+									"key": "location",
+									"value": "hello",
+									"type": "default"
+								},
+								{
+									"key": "caption",
+									"value": "test",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "2",
+									"description": "0 - Photographs, 1-Videos, 2-Cover Song, 3-Orignal Song, 4 - With Celebs, 5-With Brands, 6-Club",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/media_upload",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"media_upload"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "media_upload",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "607",
+											"type": "default"
+										},
+										{
+											"key": "single_file",
+											"type": "file",
+											"src": "/C:/Users/hp/Downloads/1920-948 11111.png"
+										},
+										{
+											"key": "multiple_file[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/game.png",
+												"/C:/Users/hp/Downloads/How to play.png",
+												"/C:/Users/hp/Downloads/Manage Market.png"
+											],
+											"disabled": true
+										},
+										{
+											"key": "with_photo",
+											"value": "celeb",
+											"type": "default"
+										},
+										{
+											"key": "location",
+											"value": "hello",
+											"type": "default"
+										},
+										{
+											"key": "caption",
+											"value": "test",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "type",
+											"value": "2",
+											"description": "0 - Photographs, 1-Videos, 2-Cover Song, 3-Orignal Song, 4 - With Celebs, 5-With Brands, 6-Club",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/media_upload",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"media_upload"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:54:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"File Uploaded Successfully.\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "SaveMedia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "location",
+									"value": "indore",
+									"type": "default"
+								},
+								{
+									"key": "caption",
+									"value": "gfg",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"description": "0 - Photographs, 1-Videos, 2-Cover Song, 3-Orignal Song, 4 - With Celebs, 5-With Brands, 6-Club\n\n",
+									"type": "default"
+								},
+								{
+									"key": "path",
+									"type": "file",
+									"src": "/D:/service_type_banner_bottom.jpg"
+								},
+								{
+									"key": "with_photo",
+									"value": "sfds",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SaveMedia",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SaveMedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserProfiles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetUserProfiles",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetUserProfiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Streaming_platform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "spotify_url",
+									"value": "http://erwrwe.com/development/api/Streaming_platform",
+									"type": "text"
+								},
+								{
+									"key": "amazon_prime",
+									"value": "http://rewrw.com/development/api/Streaming_platformd",
+									"type": "text"
+								},
+								{
+									"key": "jio_savan",
+									"value": "dsa",
+									"type": "text"
+								},
+								{
+									"key": "apple_music",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tidel",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "deezer",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pandoora",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "qubon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "end_page",
+									"value": "frewr",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/Streaming_platform",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"Streaming_platform"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "submitfbdata",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "334",
+									"type": "default"
+								},
+								{
+									"key": "facebook_link",
+									"value": "fdsfdsf",
+									"type": "default"
+								},
+								{
+									"key": "facebook_follower",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/submitfbdata",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"submitfbdata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "submitintagram",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "intagram_link",
+									"value": "asdsa",
+									"type": "default"
+								},
+								{
+									"key": "intagram_follower",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/submitintagram",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"submitintagram"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "flat_no",
+									"value": "333",
+									"type": "default"
+								},
+								{
+									"key": "landmark",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "state",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "city",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "pincode",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "aadhar_number",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "id_proof",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitAddress",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitBankDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "bankname",
+									"value": "dasdsa",
+									"type": "default"
+								},
+								{
+									"key": "branch",
+									"value": "sbi",
+									"type": "default"
+								},
+								{
+									"key": "acount_number",
+									"value": "5646484848484",
+									"type": "default"
+								},
+								{
+									"key": "ifsccode",
+									"value": "fsfre547484",
+									"type": "default"
+								},
+								{
+									"key": "pan_number",
+									"value": "er56456er5w5456",
+									"type": "default"
+								},
+								{
+									"key": "pan_name",
+									"value": "rewrw",
+									"type": "default"
+								},
+								{
+									"key": "cancel_chaque",
+									"type": "file",
+									"src": "/C:/Users/hp/Downloads/paytm.png"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitBankDetail",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitBankDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAddress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetAddress",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBanks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.partywitty.com/api/getBanks",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"getBanks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBankDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetBankDetail",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetBankDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getServiceAgreement",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/getServiceAgreement/1",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"getServiceAgreement",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInstruments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subcategory_id",
+									"value": "15",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/getInstruments",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"getInstruments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SelectIntrument",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "intrument_id",
+									"value": "1,2",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SelectIntrument",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SelectIntrument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSelected",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetSelected",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetSelected"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddBudget",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "15",
+									"type": "default"
+								},
+								{
+									"key": "private",
+									"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+									"type": "default"
+								},
+								{
+									"key": "club",
+									"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+									"type": "default"
+								},
+								{
+									"key": "corporate",
+									"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+									"type": "default"
+								},
+								{
+									"key": "private_image[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/hp/Downloads/1920-948 11111.png",
+										"/C:/Users/hp/Downloads/Group 11117 (1).png"
+									]
+								},
+								{
+									"key": "club_image[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/hp/Downloads/paytm.png",
+										"/C:/Users/hp/Downloads/phonepe.png"
+									]
+								},
+								{
+									"key": "corporate_image[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/hp/Downloads/back-chool-template-wooden-board_1308-33554.webp",
+										"/C:/Users/hp/Downloads/frame-with-happy-kids-smiling_1308-32484.webp"
+									]
+								},
+								{
+									"key": "end_page",
+									"value": "subcategory",
+									"description": "subcategory, venue",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/AddBudget",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AddBudget"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddBudget",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "824",
+											"type": "default"
+										},
+										{
+											"key": "subcategory_id",
+											"value": "15",
+											"type": "default"
+										},
+										{
+											"key": "private",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "club",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "corporate",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "private_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/1920-948 11111.png",
+												"/C:/Users/hp/Downloads/Group 11117 (1).png"
+											]
+										},
+										{
+											"key": "club_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/paytm.png",
+												"/C:/Users/hp/Downloads/phonepe.png"
+											]
+										},
+										{
+											"key": "corporate_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/back-chool-template-wooden-board_1308-33554.webp",
+												"/C:/Users/hp/Downloads/frame-with-happy-kids-smiling_1308-32484.webp"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/AddBudget",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"AddBudget"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:58:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Subcategory Not Found!\",\n    \"data\": {\n        \"num_of_intrument\": null\n    }\n}"
+						},
+						{
+							"name": "AddBudget",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "109",
+											"type": "default"
+										},
+										{
+											"key": "subcategory_id",
+											"value": "15",
+											"type": "default"
+										},
+										{
+											"key": "private",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "club",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "corporate",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "private_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/1920-948 11111.png",
+												"/C:/Users/hp/Downloads/Group 11117 (1).png"
+											]
+										},
+										{
+											"key": "club_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/paytm.png",
+												"/C:/Users/hp/Downloads/phonepe.png"
+											]
+										},
+										{
+											"key": "corporate_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/back-chool-template-wooden-board_1308-33554.webp",
+												"/C:/Users/hp/Downloads/frame-with-happy-kids-smiling_1308-32484.webp"
+											]
+										},
+										{
+											"key": "end_page",
+											"value": "fsd",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/AddBudget",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"AddBudget"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 09:19:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"new venue add.\",\n    \"data\": {\n        \"venue\": [\n            {\n                \"venue_id\": 1,\n                \"venue_name\": \"Private\"\n            }\n        ],\n        \"stage\": {\n            \"status\": \"1\",\n            \"id\": 16,\n            \"artists_type_id\": 1,\n            \"name\": \"duo\",\n            \"num_of_intrument\": \"2\",\n            \"image\": null,\n            \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n            \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n        }\n    }\n}"
+						},
+						{
+							"name": "AddBudget",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "109",
+											"type": "default"
+										},
+										{
+											"key": "subcategory_id",
+											"value": "15",
+											"type": "default"
+										},
+										{
+											"key": "private",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "club",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "corporate",
+											"value": "[\n   {\n      \"intrument_ids\":\"1\",\n      \"name\":\"somesh\",\n      \"price\":200\n   },\n   {\n      \"intrument_ids\":\"2\",\n      \"name\":\"aakash\",\n      \"price\":250\n   }\n]",
+											"type": "default"
+										},
+										{
+											"key": "private_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/1920-948 11111.png",
+												"/C:/Users/hp/Downloads/Group 11117 (1).png"
+											]
+										},
+										{
+											"key": "club_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/paytm.png",
+												"/C:/Users/hp/Downloads/phonepe.png"
+											]
+										},
+										{
+											"key": "corporate_image[]",
+											"type": "file",
+											"src": [
+												"/C:/Users/hp/Downloads/back-chool-template-wooden-board_1308-33554.webp",
+												"/C:/Users/hp/Downloads/frame-with-happy-kids-smiling_1308-32484.webp"
+											]
+										},
+										{
+											"key": "end_page",
+											"value": "subcategory",
+											"description": "subcategory, venue",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/AddBudget",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"AddBudget"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 09:46:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=99"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"new venue add.\",\n    \"data\": {\n        \"venue\": [\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"Private\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \"Club\"\n            },\n            {\n                \"venue_id\": \"3\",\n                \"venue_name\": \"Corporate\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            }\n        ],\n        \"stage\": {\n            \"status\": \"1\",\n            \"id\": 16,\n            \"artists_type_id\": 1,\n            \"name\": \"duo\",\n            \"num_of_intrument\": \"2\",\n            \"image\": null,\n            \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n            \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.partywitty.com/api/getCity",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"getCity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetCityBudgut",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "993",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "355",
+									"type": "default"
+								},
+								{
+									"key": "json",
+									"value": "[\n   {\n      \"city_id\":\"1\",\n      \"price\":200\n   },\n   {\n      \"city_id\":\"2\",\n      \"price\":250\n   },\n   {\n      \"city_id\":\"3\",\n      \"price\":400\n   }\n]",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SetCityBudgut",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SetCityBudgut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitManagerDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "signature",
+									"value": "https://www.partywitty.com/development/api/SubmitManagerDetail",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "event",
+									"type": "default"
+								},
+								{
+									"key": "contact_no",
+									"value": "9876543210",
+									"type": "default"
+								},
+								{
+									"key": "language_id",
+									"value": "1",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitManagerDetail",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitManagerDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutManagerDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "359",
+									"type": "default"
+								},
+								{
+									"key": "signature",
+									"value": "https://www.partywitty.com/development/api/SubmitManagerDetail",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "event",
+									"type": "default"
+								},
+								{
+									"key": "contact_no",
+									"value": "9876543210",
+									"type": "default"
+								},
+								{
+									"key": "language_id",
+									"value": "1",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/PutManagerDetail",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"PutManagerDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLanguages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetLanguages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetLanguages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMedia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/DeleteMedia",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"DeleteMedia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubcategoryPage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubcategoryPage",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubcategoryPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubcategoryBudgut",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubcategoryBudgut",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubcategoryBudgut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitSubcategoryPage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "15",
+									"type": "default"
+								},
+								{
+									"key": "intrument_id",
+									"value": "1,2,3",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitSubcategoryPage",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitSubcategoryPage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FilterArtist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "artists_type_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "subcategory_name",
+									"value": "solo,duo",
+									"type": "default"
+								},
+								{
+									"key": "intrument_id",
+									"value": "1,2,3",
+									"type": "default"
+								},
+								{
+									"key": "genres_name",
+									"value": "Western,Bollywood",
+									"type": "default"
+								},
+								{
+									"key": "venue_name",
+									"value": "Club,Corporate",
+									"type": "default"
+								},
+								{
+									"key": "start_price",
+									"value": "101",
+									"type": "default"
+								},
+								{
+									"key": "end_price",
+									"value": "400",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/FilterArtist",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"FilterArtist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitLanguage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "language_ids",
+									"value": "1,2",
+									"type": "default"
+								},
+								{
+									"key": "languages",
+									"value": "hindi,english",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SubmitLanguage",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitLanguage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SummaryOfBudget",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/SummaryOfBudget",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SummaryOfBudget"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SummaryOfBudget",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "654",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/SummaryOfBudget",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"SummaryOfBudget"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 04:57:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Get Budget Successfully.\",\n    \"data\": [\n        {\n            \"id\": 302,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"29\",\n            \"name\": \"Yamaha psr 1500\",\n            \"price\": \"6000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Keyboard\"\n        },\n        {\n            \"id\": 303,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"16\",\n            \"name\": \"Electric bass guitar\",\n            \"price\": \"5000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Bass guitar\"\n        },\n        {\n            \"id\": 304,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"29,16\",\n            \"name\": \"\",\n            \"price\": \"11000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Bass guitar,Keyboard\"\n        },\n        {\n            \"id\": 305,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"29\",\n            \"name\": \"Yamaha\",\n            \"price\": \"4000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Keyboard\"\n        },\n        {\n            \"id\": 306,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"16\",\n            \"name\": \"Electric bass\",\n            \"price\": \"3500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Bass guitar\"\n        },\n        {\n            \"id\": 307,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"29,16\",\n            \"name\": \"\",\n            \"price\": \"7500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Bass guitar,Keyboard\"\n        },\n        {\n            \"id\": 308,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"29\",\n            \"name\": \"Yamaha\",\n            \"price\": \"5000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Keyboard\"\n        },\n        {\n            \"id\": 309,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"16\",\n            \"name\": \"Electric bass\",\n            \"price\": \"4500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Bass guitar\"\n        },\n        {\n            \"id\": 310,\n            \"user_id\": 654,\n            \"subcategory_id\": 17,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"29,16\",\n            \"name\": \"\",\n            \"price\": \"9500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"updated_at\": \"2023-02-10T13:33:13.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"Trio\",\n            \"intrument_name\": \"Bass guitar,Keyboard\"\n        },\n        {\n            \"id\": 320,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"7\",\n            \"name\": \"Fender\",\n            \"price\": \"5000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Guitar\"\n        },\n        {\n            \"id\": 321,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"14\",\n            \"name\": \"Cajone\",\n            \"price\": \"4500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Clap box\"\n        },\n        {\n            \"id\": 322,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"7,14\",\n            \"name\": \"\",\n            \"price\": \"9500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Guitar,Clap box\"\n        },\n        {\n            \"id\": 323,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"7\",\n            \"name\": \"Fender\",\n            \"price\": \"4000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Guitar\"\n        },\n        {\n            \"id\": 324,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"14\",\n            \"name\": \"Cajone\",\n            \"price\": \"3500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Clap box\"\n        },\n        {\n            \"id\": 325,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"7,14\",\n            \"name\": \"\",\n            \"price\": \"7500\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Guitar,Clap box\"\n        },\n        {\n            \"id\": 326,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"7\",\n            \"name\": \"Fender\",\n            \"price\": \"6000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Guitar\"\n        },\n        {\n            \"id\": 327,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"14\",\n            \"name\": \"Cajone\",\n            \"price\": \"5000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Clap box\"\n        },\n        {\n            \"id\": 328,\n            \"user_id\": 654,\n            \"subcategory_id\": 16,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"7,14\",\n            \"name\": \"\",\n            \"price\": \"11000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"updated_at\": \"2023-02-10T13:36:18.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"duo\",\n            \"intrument_name\": \"Guitar,Clap box\"\n        },\n        {\n            \"id\": 329,\n            \"user_id\": 654,\n            \"subcategory_id\": 15,\n            \"venue_id\": 1,\n            \"intrument_ids\": \"1\",\n            \"name\": \"\",\n            \"price\": \"15000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:37:03.000000Z\",\n            \"updated_at\": \"2023-02-10T13:37:03.000000Z\",\n            \"venue_name\": \"Private\",\n            \"subcategory_name\": \"solo\",\n            \"intrument_name\": \"Piano\"\n        },\n        {\n            \"id\": 330,\n            \"user_id\": 654,\n            \"subcategory_id\": 15,\n            \"venue_id\": 2,\n            \"intrument_ids\": \"1\",\n            \"name\": \"\",\n            \"price\": \"5000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:37:03.000000Z\",\n            \"updated_at\": \"2023-02-10T13:37:03.000000Z\",\n            \"venue_name\": \"Club\",\n            \"subcategory_name\": \"solo\",\n            \"intrument_name\": \"Piano\"\n        },\n        {\n            \"id\": 331,\n            \"user_id\": 654,\n            \"subcategory_id\": 15,\n            \"venue_id\": 3,\n            \"intrument_ids\": \"1\",\n            \"name\": \"\",\n            \"price\": \"15000\",\n            \"image\": \"\",\n            \"status\": \"0\",\n            \"temp\": \"0\",\n            \"created_at\": \"2023-02-10T13:37:03.000000Z\",\n            \"updated_at\": \"2023-02-10T13:37:03.000000Z\",\n            \"venue_name\": \"Corporate\",\n            \"subcategory_name\": \"solo\",\n            \"intrument_name\": \"Piano\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "ProfileImages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/hp/Downloads/integrity.png"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/hp/Downloads/img_one.jpg"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/ProfileImages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"ProfileImages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AgreementVerify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "571",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/AgreementVerify",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AgreementVerify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ArtistAgreement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/ArtistAgreement",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"ArtistAgreement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NotifyEmails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "tes1t@gmail.com",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/NotifyEmails",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"NotifyEmails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "city_price",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/city_price",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"city_price"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCityPrice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/DeleteCityPrice",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"DeleteCityPrice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "32",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetProfile",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "32",
+									"type": "default"
+								},
+								{
+									"key": "username",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "contact_no",
+									"value": "9876543210",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"description": "'male', 'female'",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/EditProfile",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"EditProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSelectedLanguage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetSelectedLanguage",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetSelectedLanguage"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetSelectedLanguage",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/GetSelectedLanguage",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"GetSelectedLanguage"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 13 Mar 2023 06:58:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.2.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"You have selected Language.\",\n    \"data\": [\n        {\n            \"language_ids\": \"1\",\n            \"languages\": \"Hindi\"\n        },\n        {\n            \"language_ids\": \"7\",\n            \"languages\": \"Punjabi\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateSelectedLanguage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "language_ids",
+									"value": "4, 5",
+									"type": "text"
+								},
+								{
+									"key": "languages",
+									"value": "Gujarati, marathi",
+									"type": "text"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/UpdateSelectedLanguage",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"UpdateSelectedLanguage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSelectedLanguage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "794",
+									"type": "default"
+								},
+								{
+									"key": "language_ids",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "languages",
+									"value": "Gujarati",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/DeleteSelectedLanguage",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"DeleteSelectedLanguage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCityBudgut",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "selected_city_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/deleteCityBudgut",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"deleteCityBudgut"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSocial",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetSocial",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetSocial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetIntro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetIntro",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetIntro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetStreamingPlatform",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetStreamingPlatform",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetStreamingPlatform"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetManagerDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetManagerDetail",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetManagerDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vocalistprofile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "107",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "62",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/vocalistprofile",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"vocalistprofile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddNewVenue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "venue_id",
+									"value": "1,2",
+									"type": "text"
+								},
+								{
+									"key": "venue_name",
+									"value": "test1, test3",
+									"type": "text"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/AddNewVenue",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AddNewVenue"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddNewVenue",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "109",
+											"type": "text"
+										},
+										{
+											"key": "venue_id",
+											"value": "1,2",
+											"type": "text"
+										},
+										{
+											"key": "venue_name",
+											"value": "test1, test3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/AddNewVenue",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"AddNewVenue"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 07:28:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"new venue add.\",\n    \"data\": {\n        \"status\": \"1\",\n        \"id\": 16,\n        \"artists_type_id\": 1,\n        \"name\": \"duo\",\n        \"num_of_intrument\": \"2\",\n        \"image\": null,\n        \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n        \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "AddNewVenue",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "109",
+											"type": "text"
+										},
+										{
+											"key": "venue_id",
+											"value": "1,2",
+											"type": "text"
+										},
+										{
+											"key": "venue_name",
+											"value": "test1, test3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/AddNewVenue",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"AddNewVenue"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 14 Mar 2023 07:56:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"new venue add.\",\n    \"data\": {\n        \"venue\": [\n            {\n                \"venue_id\": 1,\n                \"venue_name\": \"Private\"\n            },\n            {\n                \"venue_id\": 2,\n                \"venue_name\": \"Club\"\n            }\n        ],\n        \"stage\": {\n            \"status\": \"1\",\n            \"id\": 16,\n            \"artists_type_id\": 1,\n            \"name\": \"duo\",\n            \"num_of_intrument\": \"2\",\n            \"image\": null,\n            \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n            \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "NewSubCategoryselected",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/NewSubCategoryselected",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"NewSubCategoryselected"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "NewSubCategoryselected",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "109",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/NewSubCategoryselected",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"NewSubCategoryselected"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 05:16:12 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"new venue add.\",\n    \"data\": {\n        \"venue\": [\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"Private\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \"Club\"\n            },\n            {\n                \"venue_id\": \"3\",\n                \"venue_name\": \"Corporate\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \"Club\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"Private\"\n            },\n            {\n                \"venue_id\": \"1\",\n                \"venue_name\": \"test1\"\n            },\n            {\n                \"venue_id\": \"2\",\n                \"venue_name\": \" test3\"\n            }\n        ],\n        \"stage\": {\n            \"status\": \"1\",\n            \"id\": 16,\n            \"artists_type_id\": 1,\n            \"name\": \"duo\",\n            \"num_of_intrument\": \"2\",\n            \"image\": null,\n            \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n            \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "NewVenueSelected",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/NewVenueSelected",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"NewVenueSelected"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "NewVenueSelected",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "user_id",
+											"value": "109",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/NewVenueSelected",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"NewVenueSelected"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 16 Mar 2023 05:15:06 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"new venue add.\",\n    \"data\": {\n        \"venue\": [\n            {\n                \"venue_id\": 1,\n                \"venue_name\": \"Private\"\n            },\n            {\n                \"venue_id\": 2,\n                \"venue_name\": \"Club\"\n            }\n        ],\n        \"stage\": {\n            \"status\": \"1\",\n            \"id\": 16,\n            \"artists_type_id\": 1,\n            \"name\": \"duo\",\n            \"num_of_intrument\": \"2\",\n            \"image\": null,\n            \"created_at\": \"2022-12-06T11:49:48.000000Z\",\n            \"updated_at\": \"2022-12-06T11:49:48.000000Z\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "club",
+			"item": [
+				{
+					"name": "submitClubProfileInfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "30",
+									"type": "default"
+								},
+								{
+									"key": "name_of_club",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "aad",
+									"type": "default"
+								},
+								{
+									"key": "landmark",
+									"value": "dasda",
+									"type": "default"
+								},
+								{
+									"key": "state",
+									"value": "dasd",
+									"type": "default"
+								},
+								{
+									"key": "city",
+									"value": "dsada",
+									"type": "default"
+								},
+								{
+									"key": "pincode",
+									"value": "dsada",
+									"type": "default"
+								},
+								{
+									"key": "iam",
+									"value": "manager",
+									"description": "owner, manager",
+									"type": "default"
+								},
+								{
+									"key": "poc",
+									"value": "98765544321",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/submitClubProfileInfo",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"submitClubProfileInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitFloorDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "floordeatail",
+									"value": "[\n   {\n      \"floor_name\":\"Floor 1\",\n      \"seating\":\"200\",\n      \"floor_type\":\"indoor\",\n      \"music_type\":\"live music\"\n   },\n   {\n      \"floor_name\":\"Floor 2\",\n      \"seating\":\"300\",\n      \"floor_type\":\"rooftop\",\n      \"music_type\":\"dj\"\n   },\n   {\n      \"floor_name\":\"Floor 3\",\n      \"seating\":\"250\",\n      \"floor_type\":\"rooftop\",\n      \"music_type\":\"instrument\"\n   }\n]",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://partywitty.com/api/SubmitFloorDetail",
+							"protocol": "http",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitFloorDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SubmitClubeDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "guest_form",
+									"value": "yes",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "projector_screen",
+									"value": "no",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "live_match_season",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "dj_avaibility",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "dance_floor",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "photographer",
+									"value": "yes",
+									"type": "default"
+								},
+								{
+									"key": "availability",
+									"value": "mon, thar, fri, sat",
+									"type": "default"
+								},
+								{
+									"key": "sponsorship",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "want_sponsorship",
+									"value": "",
+									"type": "default",
+									"disabled": true
+								},
+								{
+									"key": "no_of_floor",
+									"value": "4",
+									"type": "default",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/SubmitClubeDetail",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubmitClubeDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFloor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "club_id",
+									"value": "768",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/GetFloor",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetFloor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetFloor",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "club_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/GetFloor",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"GetFloor"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 23 Feb 2023 07:07:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Media Save Successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"guest_form\": \"yes\",\n        \"projector_screen\": \"yes\",\n        \"live_match_season\": \"yes\",\n        \"dj_avaibility\": \"yes\",\n        \"dance_floor\": \"yes\",\n        \"photographer\": \"yes\",\n        \"sponsorship\": \"yes\",\n        \"sponsor_name\": \"dd\",\n        \"want_sponsorship\": \"yes\",\n        \"no_of_floor\": 4,\n        \"created_at\": \"2022-12-05T06:49:35.000000Z\",\n        \"updated_at\": \"2023-02-23T06:50:36.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "AllArtist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://www.partywitty.com/api/AllArtist",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AllArtist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ArtistDetail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "artist_id",
+									"value": "126",
+									"type": "default"
+								},
+								{
+									"key": "profile_id",
+									"value": "46",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/ArtistDetail",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"ArtistDetail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BookArtist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "artist_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "club_id",
+									"value": "274",
+									"type": "default"
+								},
+								{
+									"key": "book_date",
+									"value": "2023-04-01",
+									"type": "default"
+								},
+								{
+									"key": "book_slot",
+									"value": "1",
+									"description": "1 => morning, 2 => evening 3 => night",
+									"type": "default"
+								},
+								{
+									"key": "show_start_time",
+									"value": "08:15",
+									"type": "default"
+								},
+								{
+									"key": "show_end_time",
+									"value": "10:15",
+									"type": "default"
+								},
+								{
+									"key": "sound_check_time",
+									"value": "07:15",
+									"type": "default"
+								},
+								{
+									"key": "no_of_break",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "formation",
+									"value": "Solo",
+									"description": "Solo, Duo, Trio, Full Band",
+									"type": "default"
+								},
+								{
+									"key": "genres",
+									"value": "Rock Night, Bollywood, Sufi",
+									"type": "default"
+								},
+								{
+									"key": "main_course",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "starter",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "non_alcoholic_beverages",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "alcoholic_beverages",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/BookArtist",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"BookArtist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "BookArtist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "artist_id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "club_id",
+											"value": "274",
+											"type": "default"
+										},
+										{
+											"key": "book_date",
+											"value": "2023-04-01",
+											"type": "default"
+										},
+										{
+											"key": "book_slot",
+											"value": "1",
+											"description": "1 => morning, 2 => evening 3 => night",
+											"type": "default"
+										},
+										{
+											"key": "show_start_time",
+											"value": "08:15",
+											"type": "default"
+										},
+										{
+											"key": "show_end_time",
+											"value": "10:15",
+											"type": "default"
+										},
+										{
+											"key": "sound_check_time",
+											"value": "07:15",
+											"type": "default"
+										},
+										{
+											"key": "no_of_break",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "formation",
+											"value": "Solo",
+											"description": "Solo, Duo, Trio, Full Band",
+											"type": "default"
+										},
+										{
+											"key": "genres",
+											"value": "Rock Night, Bollywood, Sufi",
+											"type": "default"
+										},
+										{
+											"key": "main_course",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "starter",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "non_alcoholic_beverages",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "alcoholic_beverages",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/BookArtist",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"BookArtist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 07:54:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Booking Artist Request send Successfully.\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "GetBookList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "club_id",
+									"value": "274",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/GetBookList",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetBookList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetBookArtist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "book_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/GetBookArtist",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetBookArtist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetBookArtist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "book_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/GetBookArtist",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"GetBookArtist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 24 Mar 2023 07:53:55 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Get Booking Artist Request Successfully.\",\n    \"data\": {\n        \"id\": 1,\n        \"artist_id\": 1,\n        \"club_id\": 274,\n        \"book_date\": \"2023-04-01\",\n        \"book_slot\": \"1\",\n        \"show_start_time\": \"08:15\",\n        \"show_end_time\": \"10:15\",\n        \"sound_check_time\": \"07:15\",\n        \"no_of_break\": 1,\n        \"formation\": \"Solo\",\n        \"genres\": \"Rock Night, Bollywood, Sufi\",\n        \"main_course\": 1,\n        \"starter\": 1,\n        \"non_alcoholic_beverages\": 1,\n        \"alcoholic_beverages\": 1,\n        \"status\": 1,\n        \"created_at\": \"2023-03-24T06:38:01.000000Z\",\n        \"updated_at\": \"2023-03-24T06:38:01.000000Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "guast",
+			"item": [
+				{
+					"name": "guast middle banner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/GuastMiddleBanner",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GuastMiddleBanner"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "guast top banner",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/GuastTopBanner",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"GuastTopBanner"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 11:01:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Get Guast Top Banner Successfully.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"banner\": \"public/uploads/top_banner/01677074321.webp\",\n            \"status\": 1,\n            \"created_at\": \"2023-04-07T05:03:11.000000Z\",\n            \"updated_at\": \"2023-04-07T05:07:39.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"banner\": \"public/uploads/top_banner/01677074321.webp\",\n            \"status\": 1,\n            \"created_at\": \"2023-04-07T05:03:11.000000Z\",\n            \"updated_at\": \"2023-04-07T05:07:42.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "guast top banner",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/GuastTopBanner",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GuastTopBanner"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "guast top banner",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://partywitty.com/api/GuastTopBanner",
+									"protocol": "https",
+									"host": [
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"GuastTopBanner"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 07 Apr 2023 11:01:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Get Guast Top Banner Successfully.\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"banner\": \"public/uploads/top_banner/01677074321.webp\",\n            \"status\": 1,\n            \"created_at\": \"2023-04-07T05:03:11.000000Z\",\n            \"updated_at\": \"2023-04-07T05:07:39.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"banner\": \"public/uploads/top_banner/01677074321.webp\",\n            \"status\": 1,\n            \"created_at\": \"2023-04-07T05:03:11.000000Z\",\n            \"updated_at\": \"2023-04-07T05:07:42.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Best Offers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/BestOffers",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"BestOffers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Highly Recommended",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/HighlyRecommended",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"HighlyRecommended"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Happenning Party",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/HappenningParty",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"HappenningParty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Clubs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/topclubs",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"topclubs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bottom Banners",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://partywitty.com/api/BottomBanners",
+							"protocol": "https",
+							"host": [
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"BottomBanners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/generes",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"generes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewOn",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/NewOn",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"NewOn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PopularClub",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/PopularClub",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"PopularClub"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PromoCode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/PromoCode",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"PromoCode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deals",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "deal_type_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "club_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/Deals",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"Deals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jump Start Menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "club_id",
+									"value": "927",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/JumpStartMenu",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"JumpStartMenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Food Menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "club_id",
+									"value": "927",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/FoodMenu",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"FoodMenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bevarage Menu",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "club_id",
+									"value": "927",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/BevarageMenu",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"BevarageMenu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Coupon Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/Coupon",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"Coupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "deal_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/AddCart",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"AddCart"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddCart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "guast_id",
+											"value": "7",
+											"type": "default"
+										},
+										{
+											"key": "deal_id",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://www.partywitty.com/api/AddCart",
+									"protocol": "https",
+									"host": [
+										"www",
+										"partywitty",
+										"com"
+									],
+									"path": [
+										"api",
+										"AddCart"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 29 Apr 2023 11:59:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"Cart Added successfully\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "DealType",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/DealType",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"DealType"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "173",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/GetCart",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"GetCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "guast_id",
+									"value": "7",
+									"type": "default"
+								},
+								{
+									"key": "deal_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://www.partywitty.com/api/DeleteCart",
+							"protocol": "https",
+							"host": [
+								"www",
+								"partywitty",
+								"com"
+							],
+							"path": [
+								"api",
+								"DeleteCart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
